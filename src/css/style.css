@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .cabecalho .ossos{
     height: 30px;
@@ -11,7 +11,32 @@
 }
 .dinossauro-slider{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0px ;
 }
-img{
-    height: 300px;
+.dinossauro-slider .btn-seta{
+    border: none;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    background-color: #BBC0B8;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.dinossauro-slider .btn-voltar{
+    transform: rotateY(180deg);
+}
+.dinossauro-slider .btn-seta:hover{
+    background-color: #2A2D29;
+
+}
+.lista-Dinossauro{
+    background-color: rebeccapurple;
+    width: 310px;
+    height: 420px;
+}
+.dinossauro img{
+    height: 200px;
 }
