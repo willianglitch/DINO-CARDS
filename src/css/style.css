@@ -4,6 +4,7 @@
     align-items: center;
     gap: 15px;
     padding-top: 30px;
+    font-family: 'Outfit', sans-serif;
 }
 .cabecalho .ossos{
     height: 30px;
@@ -24,19 +25,62 @@
     background-color: #BBC0B8;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .dinossauro-slider .btn-voltar{
     transform: rotateY(180deg);
 }
 .dinossauro-slider .btn-seta:hover{
     background-color: #2A2D29;
+    box-shadow: 0 0 10px #cadbeb, 0 0 40px #cadbeb, 0 0 80px #cadbeb;
 
 }
 .lista-Dinossauro{
-    background-color: rebeccapurple;
     width: 310px;
     height: 420px;
+    position: relative;
 }
-.dinossauro img{
-    height: 200px;
+.card{
+    /* opacity: 0; */
+    background-color: #2A2D29;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+.card.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+.fundo-01{
+    background: url(../assets/fundo-verde.jpg) no-repeat;
+    background-size: cover;
+}
+.fundo-02{
+    background: url(../assets/fundo-vermelho.png) no-repeat;
+}
+.card .informacoes{
+    background-color: rgba(7, 7, 8, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.card .informacoes .nome{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.card .informacoes .comida{
+    font-family: 'Raleway', sans-serif;
+    background-color: ;
+    
+}
+.card img{
+    height: 175px;
 }

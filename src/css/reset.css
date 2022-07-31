@@ -9,9 +9,7 @@ body{
     background-image: url(../assets/fundo-site.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center center; */
-    color:#f1ecff;
-    font-family: 'Outfit', sans-serif;
+    color: #fff;
 }
 ul{
     list-style: none;
