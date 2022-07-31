@@ -1,7 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
 body{
     background-color: #0876;
     background-image: url(../assets/fundo-site.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    /* background-position: center center; */
+    color:aliceblue;
+    font-family: 'Outfit', sans-serif;
 }
