@@ -1,15 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
-    outline: none;
-    box-sizing: border-box;
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
 }
-body{
-    background-color: #0876;
-    background-image: url(../assets/fundo-site.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center center; */
-    color:aliceblue;
-    font-family: 'Outfit', sans-serif;
+.cabecalho .ossos{
+    height: 30px;
+    width: 30px;
+}
+.dinossauro-slider{
+    display: flex;
+}
+img{
+    height: 300px;
 }
