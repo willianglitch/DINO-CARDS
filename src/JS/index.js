@@ -26,15 +26,16 @@ function esconderCardSelecionado (){
     cardSelecionado.classList.remove('selecionado')
 };
 
-function mostrarCard(){
-    cards[primeiroCard].classList.add('selecionado');
+function mostrarCard(indiceCard){
+    cards[indiceCard].classList.add('selecionado');
 }
+
 setaAvancar.addEventListener('click',function (){
 
     if(primeiroCard === cards.length - 1) return;
 
     primeiroCard++;
-    mostrarCard()
+    mostrarCard(primeiroCard)
     
     esconderCardSelecionado()
 });
@@ -45,6 +46,6 @@ setaVoltar.addEventListener('click',function (){
     esconderCardSelecionado()
 
     primeiroCard--;
-    mostrarCard()
+    mostrarCard(primeiroCard)
     
 });
