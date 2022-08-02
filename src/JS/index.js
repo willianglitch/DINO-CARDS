@@ -16,19 +16,35 @@ OBJETIVO 2 - QUANDO CLICAR NA SETA VOLTAR , MOSTRAR O CARD ANTERIOR
 */
 
 
-const setaAvancar = document.getElementById("setaAvancar");
+const setaAvancar = document.getElementById('setaAvancar');
+const setaVoltar = document.getElementById('setaVoltar')
 const cards = document.querySelectorAll('.card');
 let primeiroCard = 0;
 
-setaAvancar.addEventListener('click',function (){
-
-    if(primeiroCard === cards.length - 1){
-        return;
-    }
-
-    primeiroCard++;
-    cards[primeiroCard].classList.add('selecionado');
-    
+function esconderCardSelecionado (){
     const cardSelecionado = document.querySelector('.selecionado')
     cardSelecionado.classList.remove('selecionado')
+};
+
+function mostrarCard(){
+    cards[primeiroCard].classList.add('selecionado');
+}
+setaAvancar.addEventListener('click',function (){
+
+    if(primeiroCard === cards.length - 1) return;
+
+    primeiroCard++;
+    mostrarCard()
+    
+    esconderCardSelecionado()
+});
+
+setaVoltar.addEventListener('click',function (){
+    if(primeiroCard === 0) return;
+
+    esconderCardSelecionado()
+
+    primeiroCard--;
+    mostrarCard()
+    
 });
