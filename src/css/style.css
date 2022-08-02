@@ -41,7 +41,6 @@
     position: relative;
 }
 .card{
-    /* opacity: 0; */
     background-color: #2A2D29;
     height: 100%;
     display: flex;
@@ -52,6 +51,7 @@
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: opacity 0.3s ease-in-out;
+    opacity: 0;
 }
 .card.selecionado{
     opacity: 1;
