@@ -25,4 +25,9 @@
         transition: 0.4s ease-in-out;
         box-shadow: 0 0 10px #cadbeb, 0 0 40px #cadbeb, 0 0 80px #cadbeb;
     }
+    .card .informacoes .nome{
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+    }
 }

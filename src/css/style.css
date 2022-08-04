@@ -64,6 +64,14 @@
 .fundo-02{
     background: url(../assets/fundo-vermelho.png) no-repeat;
 }
+.fundo-03{
+    background: url(../assets/fundo-cinza.jfif) no-repeat;
+}
+.fundo-04{
+    background: url(../assets/fundo-azul.jfif) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .card .informacoes{
     background-color: rgba(7, 7, 8, 0.7);
     display: flex;
@@ -87,6 +95,13 @@
 .card .informacoes .comida-carne{
     font-family: 'Raleway', sans-serif;
     background-color:#000000BB;
+    padding: 8px 4px;
+    border-radius: 40px;
+    border: solid 1px #000;
+}
+.card .informacoes .comida-onivero{
+    font-family: 'Raleway', sans-serif;
+    background-color:#14081abb;
     padding: 8px 4px;
     border-radius: 40px;
     border: solid 1px #000;
